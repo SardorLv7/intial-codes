@@ -98,7 +98,20 @@ ul li {
   list-style: none;
 }
 
-
+button{
+  background: #5267DF;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 24px;
+  border: none;
+  color: #fff;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
 /* header nav */
 .header{
   display: flex;
@@ -126,14 +139,15 @@ ul li {
   letter-spacing: 1.5px;
   color: #242A45;
   margin-left: 24px;
-  
+  transition: 0.3s;
+
 }
 
 .header-nav-item .header-nav-link:hover{
   color: var(--link-code);
 }
 
-.nav-login{
+.login{
   padding: 12px 34px;
   background: var(--link-code);
   color: #fff;
@@ -143,14 +157,88 @@ ul li {
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 500;
+  transition: 0.3s;
 }
 
-.nav-login:hover{
+.login:hover{
   background-color: transparent;
   color: var(--link-code);
   border: 1px solid #FA5959;
 }
 
+
+/* hero */
+
+.hero{
+  display: flex;
+  margin-top: 200px;
+}
+
+.hero-txt h1{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: var(--head-text-color);
+}
+
+.hero-txt p{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #242A45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.hero-txt .chrome{
+  transition: 0.3s;
+}
+.hero-txt .chrome:hover{
+  background-color: transparent;
+  border:2px solid var(--button-color);
+  color: var(--button-color);
+}
+
+.hero-txt .firefox{
+  margin-left: 16px;
+  background: #F7F7F7;
+  color: var(--text-color);
+  transition: 0.3s;
+}
+.hero-txt .firefox:hover{
+  background-color: transparent;
+  border:2px solid var(--text-color);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  color: var(--head-text-color);
+}
+
+
+/* bg */
+.hero .hero-bg{
+  margin-left: 90px;
+  position: relative;
+  right: 0;
+}
+
+.img1{
+  position: absolute;
+  top: -20%;
+  left: 20%;
+}
+.img2{
+  width: 1000px;
+  height: 352px;
+  margin-left: 188px;
+  
+}
+
+
+/* features */
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
